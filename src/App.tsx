@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<MainPage />}></Route>
-        <Route path='/auth' element={<AuthPage />}></Route>
-        <Route path='/airport/:id' element={<AirportPage />}></Route>
+        <Route path='/airport/' element={<MainPage />}></Route>
+        <Route path='/airport/auth' element={<AuthPage />}></Route>
+        <Route path='/airport/airport/:id' element={<AirportPage />}></Route>
       </Routes>
     </>
   )
