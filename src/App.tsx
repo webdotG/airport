@@ -12,6 +12,7 @@ function App() {
         <Route path='/airport/' element={<MainPage />}></Route>
         <Route path='/airport/auth' element={<AuthPage />}></Route>
         <Route path='/airport/airport/:id' element={<AirportPage />}></Route>
+        <Route path='*' element={<p>404</p>}></Route>
       </Routes>
     </>
   )
