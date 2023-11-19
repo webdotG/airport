@@ -12,10 +12,8 @@ export type typeAirportType = string
 export type typeAirportRegion = string
 export type typeAirportCountry = string
 
-
-// export interface typeServerResponse<T> {
-//   count: number,
-//   next: number,
-//   previous: number,
-//   data: T[]
-// }
+export interface typeFilter {
+  type: typeAirportType,
+  region: typeAirportRegion,
+  country: typeAirportCountry
+}

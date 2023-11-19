@@ -1,6 +1,6 @@
 import { AppDispatch } from '..'
 import axios from '../../axios'
-import { typeAirport, typeServerResponse } from '../../types/types'
+import { typeAirport } from '../../types/types'
 import { fetchError, fetchSuccess, fetching } from '../slices/airportSlice'
 
 export const fetchAirports = () => {

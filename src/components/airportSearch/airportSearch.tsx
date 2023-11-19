@@ -15,7 +15,7 @@ function AirportSearch() {
   const [searchDrop, setSearchDrop] = useState(false)
 
   async function fetchAirports() {
-    const response = await axios.get(`airports?q=${debounced}`) //, {params: {search: debounced}, count: 10}
+    const response = await axios.get(`airports?q=${debounced}`) 
     // console.log("FETCH AIRPORTS SEARCH RESPONSE.DATA : ", response.data)
     setSearchAirports(response.data)
   }
