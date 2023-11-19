@@ -1,12 +1,26 @@
+import {useAppDispatch} from '../../hook/redux'
+import AirportCard from '../../components/airportCard/airportCard'
+import AirportFilter from '../../components/airportFilter/airportFilter'
+import AirportSearch from '../../components/airportSearch/airportSearch'
+import style from './mainPage.module.scss'
+import { useEffect } from 'react'
+import { fetchAirports } from '../../STORE/actions/airportAction'
 
-// import style from './mainPage.module.scss'
 
-function MainPage () {
+function MainPage() {
+  const dispatch = useAppDispatch()
 
-  return(
-    <>
-    <h1>main</h1>
-    </>
+  useEffect(() => {
+dispatch(fetchAirports())
+  }, [dispatch])
+
+  return (
+    <div className={style.mainpage_wrapper}>
+      <h1>main</h1>
+      <AirportSearch />
+      <AirportFilter />
+      <AirportCard />
+    </div>
   )
 }
 
