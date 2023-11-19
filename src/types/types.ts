@@ -8,6 +8,11 @@ export interface typeAirport {
   country: string
 }
 
+export type typeAirportType = string
+export type typeAirportRegion = string
+export type typeAirportCountry = string
+
+
 // export interface typeServerResponse<T> {
 //   count: number,
 //   next: number,
