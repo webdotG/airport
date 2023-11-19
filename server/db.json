@@ -1,0 +1,31 @@
+{
+  "airports": [
+  {
+    "id": 1,
+    "name": "NAME test",
+    "ident": "IDENT test",
+    "local_code": null,
+    "region": "REGION test",
+    "type": "TYPE test",
+    "country": "COUNTRY test"
+  },
+  {
+    "id": 2,
+    "name": "S Gravenoreen heliport",
+    "ident": "EBSN",
+    "local_code": null,
+    "region": "BE-WLG",
+    "type": "closed",
+    "country": "BE"
+  },
+  {
+    "id": 3,
+    "name": "\"Der Dingel\" Airfeild",
+    "ident": "DE-0140",
+    "local_code": null,
+    "region": "DE-HE",
+    "type": "small_airport",
+    "country": "DE"
+  }
+]
+}
