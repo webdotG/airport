@@ -1,0 +1,40 @@
+@media (min-width:320px) {}
+
+@media (min-width:320px) {
+
+  .wrapper {
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+
+
+    input {
+      padding: 10px 15px;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .search_dop_item{
+      padding-top: 5px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+      cursor: pointer;
+    }
+  }
+
+  .search_drop {
+    width: 286px;
+    height: 150px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+    bottom: -176px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    overflow-y: scroll;
+  }
+}
