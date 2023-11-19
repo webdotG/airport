@@ -1,4 +1,3 @@
-
 export interface typeAirport {
   id: number,
   name: string,
@@ -8,3 +7,10 @@ export interface typeAirport {
   type: string,
   country: string
 }
+
+// export interface typeServerResponse<T> {
+//   count: number,
+//   next: number,
+//   previous: number,
+//   data: T[]
+// }

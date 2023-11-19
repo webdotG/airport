@@ -26,6 +26,7 @@ const airportSlice = createSlice({
     fetchSuccess(state, action: PayloadAction<typeAirport[]>){
       state.loading = false
       state.airports = action.payload
+      console.log("SLICE STATE AIRPORTS : ", state.airports)
     },
 
     fetchError(state, action: PayloadAction<Error>){
