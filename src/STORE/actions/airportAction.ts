@@ -10,8 +10,7 @@ export const fetchAirports = () => {
     try {
       dispatch(fetching())
       const response = await axios.get<typeAirport[]>('airports')
-      console.log("RESPONSE : ", response)
-      console.log('RESPONSE.DATA : ', response.data)
+      // console.log('RESPONSE.DATA : ', response.data)
       dispatch(fetchSuccess(response.data))
       
     } catch (e) {

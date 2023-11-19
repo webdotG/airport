@@ -8,8 +8,8 @@ function Navigation() {
 
     <div className={style.navigation_wrapper}>
     <nav>
-      <Link to='/airport' className={style.nav_link}>airport</Link>
-      <Link to='/airport/auth' className={style.nav_link}>auth</Link>
+      <Link to='/airport' className={style.nav_link}>Аэропорт</Link>
+      <Link to='/airport/auth' className={style.nav_link}>Авторизация</Link>
     </nav>
     </div>
   )

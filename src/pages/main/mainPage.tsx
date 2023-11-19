@@ -14,12 +14,14 @@ function MainPage() {
   useEffect(() => {
 dispatch(fetchAirports())
   }, [dispatch])
-  // console.log("MAINPAGE AIRPORTS.MAP AIRPORT : ", airport)
+
   return (
     <div className={style.mainpage_wrapper}>
-      <h1>main</h1>
+      <h1>Главная</h1>
       <AirportSearch />
       <AirportFilter />
+      {loading && <p className={style.loading}>Загрузка...</p>}
+      {error && <p className={style.loading}>Ошибка... {error}</p>}
       {
         airports.map(airport => <AirportCard key={airport.id} airport={airport} />)
       }
