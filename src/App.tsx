@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import MainPage from './pages/main/mainPage'
 import AuthPage from './pages/auth/authPage'
-import AirportPage from './pages/airport/aiportPage'
+import AirportPage from './pages/airport/airportDetailPage'
 import style from './App.module.scss'
 import Navigation from './components/navigation/navigation'
 

@@ -21,7 +21,7 @@ dispatch(fetchAirports())
       <AirportSearch />
       <AirportFilter />
       {loading && <p className={style.loading}>Загрузка...</p>}
-      {error && <p className={style.loading}>Ошибка... {error}</p>}
+      {error && <p className={style.error}>Ошибка... {error}</p>}
       {
         airports.map(airport => <AirportCard key={airport.id} airport={airport} />)
       }
